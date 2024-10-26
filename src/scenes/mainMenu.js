@@ -17,7 +17,7 @@ export default function mainMenu() {
         k.add([k.sprite("platforms"), k.pos(0, 450), k.scale(4)]),
         k.add([k.sprite("platforms"), k.pos(platformWidth*4, 450), k.scale(4)]),
     ];
-
+    
     k.add([
         k.text("SONIC RING RUN", {font: "mania", size:"96"}), k.pos(k.center().x, 200),
         k.anchor("center")
