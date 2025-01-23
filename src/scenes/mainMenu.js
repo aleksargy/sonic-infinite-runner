@@ -19,7 +19,7 @@ export default function mainMenu() {
     ];
     
     k.add([
-        k.text("SONIC RING RUN", {font: "mania", size:"96"}), k.pos(k.center().x, 200),
+        k.text("THE BAD BOY'S SONIC RING RUN", {font: "mania", size:"96"}), k.pos(k.center().x, 200),
         k.anchor("center")
     ]);
 
