@@ -2,7 +2,7 @@ import k from "../kaplayCtx";
 
 export default function gameover(citySFX)
 {
-    citySFX.paused = true;
+    //citySFX.paused = true;
     let bestScore = k.getData("best-score");
     const currentScore = k.getData("current-score");
 
@@ -81,5 +81,17 @@ export default function gameover(citySFX)
         k.text(bestRank, { font: "mania", size: 100 }),
         k.anchor("center"),
     ])
+
+    k.wait(1, () => {
+        k.add([
+            k.text("Jump to Play Again", {
+                font: "mania",
+                size: 64,
+            }),
+            k.anchor("center"),
+            k.pos(k.center().x, k.center().y + 350),
+        ]);
+        k.onButtonPress("jump", () => k.go("game"));
+    });
 
 }
